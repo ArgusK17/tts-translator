@@ -42,7 +42,7 @@ def find_matches(words, glossary):
     return matched_pairs
 
 def augmentSpecialWords(client, input):
-    glossary_path = '/content/tts-translator/database/translation_glossary.csv'
+    glossary_path = '/content/tts_translator/database/translation_glossary.csv'
     glossary = pd.read_csv(glossary_path, skiprows=1, usecols=[0, 1], header=None)
     glossary.columns = ['English', 'Chinese']
 
