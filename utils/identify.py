@@ -35,11 +35,15 @@ def retriveSpecialWords(client, input, model = "gpt-3.5-turbo"):
 # Function to find matches
 def find_matches(words, glossary):
     matched_pairs = []
+    unmatched_words = []
     for word in words:
         matches = glossary[glossary['English'].str.contains(word, case=False, na=False)]
-        for _, match in matches.iterrows():
-            matched_pairs.append((match['English'], match['Chinese']))
-    return matched_pairs
+        if matches.empty:
+            unmatched_words.append(word)
+        else:
+            for _, match in matches.iterrows():
+                matched_pairs.append((match['English'], match['Chinese']))
+    return matched_pairs, unmatched_words
 
 def augmentSpecialWords(client, input):
     glossary_path = '/content/tts_translator/datasets/translation_glossary.csv'
@@ -48,5 +52,5 @@ def augmentSpecialWords(client, input):
 
     # Get the matching English-Chinese pairs
     word_list = retriveSpecialWords(client, input)
-    matches = find_matches(word_list, glossary)
-    return matches
+    matched_pairs, unmatched_words = find_matches(word_list, glossary)
+    return matched_pairs, unmatched_words
