@@ -49,4 +49,4 @@ def augmentSpecialWords(client, input):
     # Get the matching English-Chinese pairs
     word_list = retriveSpecialWords(client, input)
     matches = find_matches(word_list, glossary)
-    print(matches)
+    return matches
