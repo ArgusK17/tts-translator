@@ -1,5 +1,3 @@
-import pandas as pd
-
 # Function to retrive special word with LLM
 def retriveSpecialWords(client, input, model = "gpt-3.5-turbo"):
 
@@ -45,12 +43,15 @@ def find_matches(words, glossary):
                 matched_pairs.append((match['English'], match['Chinese']))
     return matched_pairs, unmatched_words
 
-def augmentSpecialWords(client, input):
-    glossary_path = '/content/tts_translator/datasets/translation_glossary.csv'
-    glossary = pd.read_csv(glossary_path, skiprows=1, usecols=[0, 1], header=None)
-    glossary.columns = ['English', 'Chinese']
-
+def augmentSpecialWords(client, input, glossary):
     # Get the matching English-Chinese pairs
     word_list = retriveSpecialWords(client, input)
     matched_pairs, unmatched_words = find_matches(word_list, glossary)
     return matched_pairs, unmatched_words
+
+import numpy as np
+
+def get_embedding(text, model="text-embedding-3-small"):
+    text = text.replace("\n", " ")
+    embedding = client.embeddings.create(input=[text], model=model).data[0].embedding
+    return np.array(embedding)
