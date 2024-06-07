@@ -1,3 +1,6 @@
+import numpy as np
+import torch
+
 # Function to retrive special word with LLM
 def retriveSpecialWords(client, input, model = "gpt-3.5-turbo"):
 
@@ -40,7 +43,7 @@ def find_matches(words, glossary):
             unmatched_words.append(word)
         else:
             for _, match in matches.iterrows():
-                matched_pairs.append((match['English'], match['Chinese']))
+                matched_pairs.append({'English':match['English'], "Chinese":match['Chinese']})
     return matched_pairs, unmatched_words
 
 def augmentSpecialWords(client, input, glossary):
@@ -49,9 +52,15 @@ def augmentSpecialWords(client, input, glossary):
     matched_pairs, unmatched_words = find_matches(word_list, glossary)
     return matched_pairs, unmatched_words
 
-import numpy as np
-
 def get_embedding(client, text, model="text-embedding-3-small"):
     text = text.replace("\n", " ")
     embedding = client.embeddings.create(input=[text], model=model).data[0].embedding
     return np.array(embedding)
+
+def get_similar_paragraphs(client, input, embedding_history, history, num_paras=3):
+  embedding = get_embedding(client, input)
+  score = (embedding_history*embedding.unsqueeze(dim=0)).sum(dim=1)
+  _, idx_tensor = torch.topk(score, num_paras)
+  idx_list = idx_tensor.tolist()
+  similar_paragraphs = [{'English':history[row_idx]['English'], "Chinese":history[row_idx]['Chinese']} for row_idx in idx_list]
+  return similar_paragraphs
