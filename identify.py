@@ -33,18 +33,31 @@ def retriveSpecialWords(client, input, model = "gpt-3.5-turbo"):
 
     return word_list
 
+def remove_repeat_words(word_list):
+  seen = set()
+  unique_list = []
+  for item in word_list:
+      if item['English'] not in seen:
+          unique_list.append(item)
+          seen.add(item['English'])
+  return unique_list
+
 # Function to find matches
 def find_matches(words, glossary):
     matched_pairs = []
     unmatched_words = []
+
     for word in words:
-        matches = glossary[glossary['English'].str.contains(word, case=False, na=False)]
-        if matches.empty:
+        # Filter glossary for entries containing the word (case insensitive)
+        matches = [entry for entry in glossary if word.lower() in entry['English'].lower()]
+        
+        if not matches:
             unmatched_words.append(word)
         else:
-            for _, match in matches.iterrows():
-                matched_pairs.append({'English':match['English'], "Chinese":match['Chinese']})
-    return matched_pairs, unmatched_words
+          if not (matches in matched_pairs):
+            matched_pairs.extend(matches)  # Add found matches to the list
+
+    return remove_repeat_words(matched_pairs), remove_repeat_words(unmatched_words)
 
 def augmentSpecialWords(client, input, glossary):
     # Get the matching English-Chinese pairs
