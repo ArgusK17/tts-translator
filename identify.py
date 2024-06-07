@@ -57,7 +57,7 @@ def find_matches(words, glossary):
           if not (matches in matched_pairs):
             matched_pairs.extend(matches)  # Add found matches to the list
 
-    return remove_repeat_words(matched_pairs), remove_repeat_words(unmatched_words)
+    return remove_repeat_words(matched_pairs), list(set(unmatched_words))
 
 def augmentSpecialWords(client, input, glossary):
     # Get the matching English-Chinese pairs
