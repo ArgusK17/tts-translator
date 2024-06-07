@@ -55,7 +55,7 @@ def augmentSpecialWords(client, input, glossary):
 def get_embedding(client, text, model="text-embedding-3-small"):
     text = text.replace("\n", " ")
     embedding = client.embeddings.create(input=[text], model=model).data[0].embedding
-    return np.array(embedding)
+    return torch.tensor(embedding)
 
 def get_similar_paragraphs(client, input, embedding_history, history, num_paras=3):
   embedding = get_embedding(client, input)
