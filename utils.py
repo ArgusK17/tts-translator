@@ -25,8 +25,9 @@ def remove_repeat_words(word_list):
 
 class Translator():
 
-  def __init__(self, client, 
-               glossary_path, history_path, embedding_path):
+  def __init__(self, client, glossary_path = '/content/tts_translator/datasets/translation_glossary.json',
+         history_path = '/content/tts_translator/datasets/translation_history.json',
+         embedding_path = '/content/tts_translator/datasets/translation_history_embedding.pt'):
     self.client = client
     with open(glossary_path, 'r', encoding='utf-8') as file_g:
       self.glossary = json.load(file_g)
