@@ -119,7 +119,7 @@ class Translator():
     icl_prompt += '\n'
 
     system_prompt = 'You are an expert novel translator.'
-    input_prompt = 'I want you to translate some English paragraphs into Chinese. I provide some reference materials for you.\n\n'+word_prompt+icl_prompt+f'---\nNow translate the following English paragraph into Chinese:\nEnglish: {input}\nChinese: '
+    input_prompt = 'I want you to translate some English paragraphs into Chinese. I provide some reference materials for you.\n\n'+word_prompt+icl_prompt+f'---\nNow translate the following English paragraph into Chinese. If a special name only appears partially, then translate it partially (Such as translate "Homura" to "焰" only). \nEnglish: {input}\nChinese: '
 
     model = "gpt-4o-2024-05-13"
     response = self.client.chat.completions.create(
@@ -130,7 +130,6 @@ class Translator():
     ],
     temperature=1,
     )
-
     self.prompt = input_prompt
 
     return response.choices[0].message.content
