@@ -1,26 +1,462 @@
 [
     {
-        "English":"Shizuki Ryouko",
-        "Chinese":"志筑良子"
+        "English": "Shizuki Ryouko",
+        "Chinese": "志筑良子"
     },
     {
-        "English":"Nakihara Asami",
-        "Chinese":"鸣原亚纱美"
+        "English": "Tomoe Mami",
+        "Chinese": "巴麻美"
     },
     {
-        "English":"Tomoe Mami",
-        "Chinese":"巴麻美"
+        "English": "Sakura Kyouko",
+        "Chinese": "佐仓杏子"
     },
     {
-        "English":"Sakura Kyouko",
-        "Chinese":"佐仓杏子"
+        "English": "Nakihara Asami",
+        "Chinese": "鸣原亚纱美"
     },
     {
-        "English":"Akemi Homura",
-        "Chinese":"晓美焰"
+        "English": "Chitose Yuma",
+        "Chinese": "千岁由真"
     },
     {
-        "English":"Chitose Yuma",
-        "Chinese":"千岁由真"
+        "English": "Clarisse",
+        "Chinese": "克莱丽丝"
+    },
+    {
+        "English": "Clarisse van Rossum",
+        "Chinese": "克莱丽丝·凡·罗萨姆"
+    },
+    {
+        "English": "Kyubey",
+        "Chinese": "丘比"
+    },
+    {
+        "English": "Joanne Valentin",
+        "Chinese": "乔安妮·瓦伦丁"
+    },
+    {
+        "English": "Simona del Mago",
+        "Chinese": "西蒙娜·德尔·马戈"
+    },
+    {
+        "English": "Atsuko Arisu",
+        "Chinese": "有栖敦子"
+    },
+    {
+        "English": "Nadya Antipova",
+        "Chinese": "娜迪亚·安提波娃"
+    },
+    {
+        "English": "Gracia Perez",
+        "Chinese": "格莱希亚·佩雷兹"
+    },
+    {
+        "English": "Zheng Ying-zhi",
+        "Chinese": "郑颖芝"
+    },
+    {
+        "English": "Mina Guyure",
+        "Chinese": "弥娜·古耶尔"
+    },
+    {
+        "English": "Shizuki Elanis",
+        "Chinese": "志筑·爱兰尼斯"
+    },
+    {
+        "English": "Kuroi Eri",
+        "Chinese": "黑井英理"
+    },
+    {
+        "English": "Kuroi Kana",
+        "Chinese": "黑井香菜"
+    },
+    {
+        "English": "Azrael",
+        "Chinese": "阿兹瑞尔"
+    },
+    {
+        "English": "Volokhov",
+        "Chinese": "沃洛科夫"
+    },
+    {
+        "English": "Karina Schei",
+        "Chinese": "卡莉娜·塞"
+    },
+    {
+        "English": "Shen Xiao Long",
+        "Chinese": "沈小龙"
+    },
+    {
+        "English": "Marianne François",
+        "Chinese": "玛丽安·弗朗索斯"
+    },
+    {
+        "English": "Anand",
+        "Chinese": "阿南"
+    },
+    {
+        "English": "Sualem",
+        "Chinese": "索莱姆"
+    },
+    {
+        "English": "De Chatillon",
+        "Chinese": "德·沙蒂隆"
+    },
+    {
+        "English": "Feodorovich",
+        "Chinese": "费奥多维奇"
+    },
+    {
+        "English": "Hinata Aina",
+        "Chinese": "日向爱娜"
+    },
+    {
+        "English": "Miroko Mikuru",
+        "Chinese": "三郎子海来"
+    },
+    {
+        "English": "Shirou Asaka",
+        "Chinese": "司朗浅香"
+    },
+    {
+        "English": "Patricia von Rohr",
+        "Chinese": "帕特里西亚·冯·洛尔"
+    },
+    {
+        "English": "Kishida Maki",
+        "Chinese": "岸田麻希"
+    },
+    {
+        "English": "Tanaka Yui",
+        "Chinese": "田中唯"
+    },
+    {
+        "English": "Risa Flores",
+        "Chinese": "理沙·弗劳莱斯"
+    },
+    {
+        "English": "Charlotte Meitner",
+        "Chinese": "夏洛提·梅尔"
+    },
+    {
+        "English": "Odette François",
+        "Chinese": "奥黛特·弗朗索斯"
+    },
+    {
+        "English": "Watanabe Tomi",
+        "Chinese": "渡辺兔美"
+    },
+    {
+        "English": "Akiyama Akari",
+        "Chinese": "秋山灯里"
+    },
+    {
+        "English": "Mitakihara",
+        "Chinese": "见泷原"
+    },
+    {
+        "English": "Kazamino",
+        "Chinese": "风见野"
+    },
+    {
+        "English": "Epsilon Eridani",
+        "Chinese": "波江座 ε 星"
+    },
+    {
+        "English": "Zeus Research Center",
+        "Chinese": "宙斯研究中心"
+    },
+    {
+        "English": "Prometheus Research Center",
+        "Chinese": "普罗米修斯研究中心"
+    },
+    {
+        "English": "Yangtze Sector",
+        "Chinese": "长江战区"
+    },
+    {
+        "English": "Huanghe Sector",
+        "Chinese": "黄河战区"
+    },
+    {
+        "English": "Euphratic Sector",
+        "Chinese": "幼发拉底战区"
+    },
+    {
+        "English": "Nile Sector",
+        "Chinese": "尼罗河战区"
+    },
+    {
+        "English": "Orpheus",
+        "Chinese": "俄耳甫斯"
+    },
+    {
+        "English": "Samsara",
+        "Chinese": "萨姆萨拉"
+    },
+    {
+        "English": "Eurydome",
+        "Chinese": "尤里德米"
+    },
+    {
+        "English": "Adept Blue",
+        "Chinese": "蓝色大师"
+    },
+    {
+        "English": "Executive Tower",
+        "Chinese": "行政大楼"
+    },
+    {
+        "English": "Incubator",
+        "Chinese": "孵化者"
+    },
+    {
+        "English": "Cephalopod",
+        "Chinese": "章鱼"
+    },
+    {
+        "English": "demon",
+        "Chinese": "魔兽"
+    },
+    {
+        "English": "starport",
+        "Chinese": "星港"
+    },
+    {
+        "English": "Mandatory Session",
+        "Chinese": "必修科目"
+    },
+    {
+        "English": "Allocs",
+        "Chinese": "分配劵"
+    },
+    {
+        "English": "grief cube",
+        "Chinese": "悲叹之种"
+    },
+    {
+        "English": "Information Restriction Act",
+        "Chinese": "信息限制法案"
+    },
+    {
+        "English": "miasma",
+        "Chinese": "瘴气"
+    },
+    {
+        "English": "recoil",
+        "Chinese": "反动力"
+    },
+    {
+        "English": "nomenclator",
+        "Chinese": "姓名提示器"
+    },
+    {
+        "English": "arbalest",
+        "Chinese": "钢弩"
+    },
+    {
+        "English": "scramjet",
+        "Chinese": "喷气机"
+    },
+    {
+        "English": "Law of Cycles",
+        "Chinese": "圆环之理"
+    },
+    {
+        "English": "Ancient",
+        "Chinese": "老祖宗"
+    },
+    {
+        "English": "Matriarch",
+        "Chinese": "主母"
+    },
+    {
+        "English": "Matriarchy",
+        "Chinese": "家族"
+    },
+    {
+        "English": "Trusted Computing Framework / TCF",
+        "Chinese": "可信计算框架"
+    },
+    {
+        "English": "Unification Wars",
+        "Chinese": "统一战争"
+    },
+    {
+        "English": "Contact War",
+        "Chinese": "接触战争"
+    },
+    {
+        "English": "Pretoria Scandal",
+        "Chinese": "茨瓦内门"
+    },
+    {
+        "English": "St. Petersburg Atrocity",
+        "Chinese": "圣彼得堡大屠杀"
+    },
+    {
+        "English": "D&E Corporation",
+        "Chinese": "见泷原急便"
+    },
+    {
+        "English": "FTL interdiction",
+        "Chinese": "超光速阻断"
+    },
+    {
+        "English": "command gestalt",
+        "Chinese": "指挥格式塔"
+    },
+    {
+        "English": "Emergency Defense Council / EDC",
+        "Chinese": "紧急防务评议会"
+    },
+    {
+        "English": "vision",
+        "Chinese": "神启"
+    },
+    {
+        "English": "Trusted non‐contractee / TNC/ trusted NC",
+        "Chinese": "可信外人"
+    },
+    {
+        "English": "Songpa incident",
+        "Chinese": ""
+    },
+    {
+        "English": "October Three/October Third",
+        "Chinese": "十·三节"
+    },
+    {
+        "English": "Governance",
+        "Chinese": "执政体"
+    },
+    {
+        "English": "Representative",
+        "Chinese": "委员"
+    },
+    {
+        "English": "Committee",
+        "Chinese": "委员会"
+    },
+    {
+        "English": "Directorate",
+        "Chinese": "执政理事会"
+    },
+    {
+        "English": "Science and Technology",
+        "Chinese": "科技委员"
+    },
+    {
+        "English": "Military Affairs",
+        "Chinese": "国防委员"
+    },
+    {
+        "English": "Manufacturing and Distribution",
+        "Chinese": "经济委员"
+    },
+    {
+        "English": "Health and Happiness",
+        "Chinese": "卫健委员"
+    },
+    {
+        "English": "Colonial Affairs and Colonization",
+        "Chinese": "殖民委员"
+    },
+    {
+        "English": "Public Order/ Law and order",
+        "Chinese": "公安委员"
+    },
+    {
+        "English": "Artificial Intelligence",
+        "Chinese": "人工智能委员"
+    },
+    {
+        "English": "Public Opinion",
+        "Chinese": "宣传委员"
+    },
+    {
+        "English": "Magical Girls",
+        "Chinese": "魔法少女委员"
+    },
+    {
+        "English": "Machine for Allocation of Representation / MAR",
+        "Chinese": "委员代议权分配机"
+    },
+    {
+        "English": "Military Artificial Intelligence for Supply and Logistics / MAISL",
+        "Chinese": "军事后勤与保障 AI"
+    },
+    {
+        "English": "Production and Allocation Machine / PAL",
+        "Chinese": "生产与分配机"
+    },
+    {
+        "English": "Core Rights",
+        "Chinese": "核心权利"
+    },
+    {
+        "English": "Mahou Shoujo Youkai / MSY",
+        "Chinese": "魔法少女行会 / 行会"
+    },
+    {
+        "English": "Leadership Committee",
+        "Chinese": "领导委员会"
+    },
+    {
+        "English": "Mental Health Division / MHD",
+        "Chinese": "心理卫生部"
+    },
+    {
+        "English": "Finance Division",
+        "Chinese": "财政部"
+    },
+    {
+        "English": "Governmental Affairs",
+        "Chinese": "政府关系"
+    },
+    {
+        "English": "Soul Guard",
+        "Chinese": "灵魂卫队"
+    },
+    {
+        "English": "Black Heart",
+        "Chinese": "暗之心"
+    },
+    {
+        "English": "Internal Security",
+        "Chinese": "内部保安局"
+    },
+    {
+        "English": "TNC/trusted NC/trusted non-contractee",
+        "Chinese": "可信外人"
+    },
+    {
+        "English": "Rules Committee",
+        "Chinese": "规章委员会"
+    },
+    {
+        "English": "Guild",
+        "Chinese": "公会"
+    },
+    {
+        "English": "the Charter",
+        "Chinese": "《章程》"
+    },
+    {
+        "English": "Executive Committee",
+        "Chinese": "执行委员会"
+    },
+    {
+        "English": "Legal Subcommittee",
+        "Chinese": "法律子委员会"
+    },
+    {
+        "English": "Science Division",
+        "Chinese": "科学部"
+    },
+    {
+        "English": "Demonology Center",
+        "Chinese": "魔兽研究中心"
     }
 ]
