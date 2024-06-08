@@ -97,12 +97,12 @@ class Translator():
 
   def augmentSpecialWords(self, input):
       # Get the matching English-Chinese pairs
-      word_list = self.retriveSpecialWords(self.client, input)
-      matched_pairs, unmatched_words = self.find_matches(word_list, self.glossary)
+      word_list = self.retriveSpecialWords(input)
+      matched_pairs, unmatched_words = self.find_matches(word_list)
       return matched_pairs, unmatched_words
   
   def translate(self, input:str):
-    matched_pairs, unmatched_words = self.augmentSpecialWords(self.client, input, self.glossary)
+    matched_pairs, unmatched_words = self.augmentSpecialWords(input)
     word_prompt = '### Special words\n'
     for augWord in matched_pairs:
       word_prompt += f'English: {augWord["English"]}\nChinese: {augWord["Chinese"]}\n'
@@ -111,7 +111,7 @@ class Translator():
     if not unmatched_words == []:
       print(f'{unmatched_words} not found in the glossary')
 
-    similar_paragraphs = self.get_similar_paragraphs(self.client, input, self.embedding_history, self.history)
+    similar_paragraphs = self.get_similar_paragraphs(input)
     icl_prompt = '### Transltion Examples\n'
     for para in similar_paragraphs:
       icl_prompt += f'English: {para["English"]}\nChinese: {para["Chinese"]}\n'
