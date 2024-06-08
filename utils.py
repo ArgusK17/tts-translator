@@ -25,14 +25,10 @@ def remove_repeat_words(word_list):
 
 class Translator():
 
-  def __init__(self, glossary_path = '/content/tts_translator/datasets/translation_glossary.json',
+  def __init__(self, client, glossary_path = '/content/tts_translator/datasets/translation_glossary.json',
          history_path = '/content/tts_translator/datasets/translation_history.json',
          embedding_path = '/content/tts_translator/datasets/translation_history_embedding.pt'):
-    self.client = OpenAI(
-      organization='org-ZNOCzmFKmIIlnsUjnyaQvFEg',
-      project='proj_eu2TtMW53eCscTUjRZSwtS8Z',
-      api_key='sk-proj-0CQVxSV8Wx8yUBXdZw8DT3BlbkFJi9bJgzRtUJVM4xm5jh2B'
-    )
+    self.client = client
     with open(glossary_path, 'r', encoding='utf-8') as file_g:
       self.glossary = json.load(file_g)
     with open(history_path, 'r') as file_h:
