@@ -110,7 +110,7 @@ class Translator():
     word_prompt += '\n'
     
     if not unmatched_words == []:
-      print(f'{unmatched_words} not found in the glossary')
+      print(f'Warning: {unmatched_words} not found in the glossary')
 
     similar_paragraphs = self.get_similar_paragraphs(input)
     icl_prompt = '### Transltion Examples\n'
