@@ -34,6 +34,7 @@ class Translator():
     with open(history_path, 'r') as file_h:
       self.history = json.load(file_h)
     self.embedding_history = torch.load(embedding_path)
+    self.prompt = None
     
   def get_embedding(self, text, model="text-embedding-3-small"):
     text = text.replace("\n", " ")
@@ -129,5 +130,7 @@ class Translator():
     ],
     temperature=1,
     )
+
+    self.prompt = input_prompt
 
     return response.choices[0].message.content
